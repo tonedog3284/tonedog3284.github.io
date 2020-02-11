@@ -10,9 +10,9 @@
 $(document).ready(function(){
   $("button").click(function(){
     $("#h1").css("color", "red")
-      .slideUp(2000)
-      .slideDown(2000);
-   });
+    var h1= $("h1");
+    h1.animate({fontSize: '180px'}, "slow");
+    h1.animate({fontSize: '80px'}, "slow");   });
 });
 </script>
 </head>
