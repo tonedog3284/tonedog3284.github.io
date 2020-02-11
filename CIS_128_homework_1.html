@@ -8,7 +8,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script>
 $(document).ready(function(){
-  $("button").click(function(){
+  $("button").on('click', function(){
     $("#h1").css("color", "coral")
     var h1= $("h1");
     h1.animate({fontSize: '180px'}, "slow");
