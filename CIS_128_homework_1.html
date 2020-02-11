@@ -7,14 +7,17 @@
 <link rel="stylesheet" href="CSS1.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script>
-$(document).ready(funtion() {
-   $("button").click(function() {
-   $("p").css("color", "red").slideUp(2000).slideDown(2000);
-  });
-});</script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $("#h1").css("color", "red")
+      .slideUp(2000)
+      .slideDown(2000);
+   });
+});
+</script>
 </head>
 <body>
-<h1>CIS 128</h1>
+<h1 id="h1">CIS 128</h1>
 <p>
 <img src="IMG_0133.jpeg" alt="Tony wearing a SF Giants baseball hat and Angela" width="250" height="200" id="pic"/>
 My name is Tony Girard and I am 34 years old. I have a 15 year old daughter named Jordan. My greatest passion is sports. I love to watch football, baseball and basketball. I still play basketball once or twice a week, as well as surf occasionally. I bartend for a living at an Italian restaurant close to where I live. </p>
