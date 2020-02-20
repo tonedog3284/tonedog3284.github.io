@@ -65,7 +65,6 @@ dt {
 .navigation {
   background-color:#7b96bc;
   border-bottom: 2px solid #594846;
-  overflow: auto;
 }
 
 .navigation ul li {
@@ -108,15 +107,13 @@ img, iframe {max-width: 100%;}
 /* Structure */
 
 @media screen and (max-width: 480px) {
-body, .footer, .navigation {width: 320px;}
+body, .header, .footer, .navigation {width: 100%;}
 .column {margin: 10px 0; border-bottom: 1px dashed #7b96bc;}
-.navigation ul li {display: block; width: 320px; text-align: center; padding: 0.3em 
-0;}
-#visit, #points, #main {width: 320px;}
+.navigation ul li {width: 100%;}
+#visit, #points, #main {width: 100%;}
 }
 
 @media screen and (min-width: 481px) {
-
 body, .header, .navigation, .footer {
   width: 100%;
 }
@@ -134,7 +131,7 @@ body, .header, .navigation, .footer {
 }
 
 .navigation ul li {
-  width: 33.33333%;
+  width: 33.33333%; /* 960/3 */
 }
 
 .header {
