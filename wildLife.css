@@ -265,10 +265,20 @@ body{
   		grid-row-start: 3;
   		grid-row-end: 4;
 		background-color:#c4d5d9;
+		animation-name: footerAnimation;
+		animation-duration: 8s;
+		animation-iteration-count: infinite;		
 		margin:0 auto;
 		padding:15px;
 		text-align:center;
 		width:100%;
+	}
+		@keyframes footerAnimation{
+		0% {background-color:#c4d5d9;}
+		25% {background-color:#f08080;}
+		50% {background-color:#48d1cc;}
+		75% {background-color:#fdf5e6;}
+		100% {background-color:#c4d5d9;}
 	}
 }
  
