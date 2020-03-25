@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Toy website using Semantic UI">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/
+   semantic.min.css">
+
+ 
+
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+
+</head>
+
+<body>
+
+<div class="ui container">
+  <div class="ui top fixed five item menu">
+    <a href="homework3HomePage.html" class="link item">Home</a>
+    <a href="homework3ProductsPage.html" class="link item">Products</a>
+    <a href="homework3LocationPage.html" class="active link item">Location</a>
+    <a href="homework3ContactPage.html" class="link item">Contact Us</a>
+    <a href="homework3ExtraPage.html" class="link item">Extra</a>
+  </div>
+
+<br><br>
+
+<h1 class="ui center aligned header">Location</h1>
+
+<hr>
+<br>
+
+<button onClick="getLocation()" ontouchend="getLocation()">My Location</button>
+
+<div id="mapholder"></div>
+
+<script>
+
+var x=document.getElementById("demo");
+
+function getLocation() {
+  if(navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition, showError);
+  }
+    else {
+    x.innerHTML="Sorry, browser does not support geolocation.";
+  }
+
+function showPosition(position) { 
+  var latlon=position.coords.latitude+","+position.coords.longitude;
+
+  var img_url="http://maps.googleapis.com/maps/api/staticmap?center="
+ +latlon+"&zoom=14&size=400x300&sensor=false&key=AIzaSyDS9g7UhujFaAyf1x4laMwwimm62cO4Nmg";
+  
+  document.getElementById("mapholder").innerHTML="<img src='"+img_url+"'>";
+}
+
+function showError(error) {
+  switch(error.code) {
+    case error.PERMISSION_DENIED:
+      x.innerHTML="User denied Geolocation request."
+      break;
+    case error.POSITION_UNAVAILABLE:
+      x.innerHTML="Cannot find location."
+      break;
+    case error.TIMEOUT:
+      x.innerHTML="Location search timned out."
+      break;
+    case error.UNKNOWN_ERROR:
+      x.innerHTML="Sorry, an unknown error occured."  
+      break;
+  }
+}
+
+</script>
+</body>
+</html> 
+
+
+
+
+
+
+
