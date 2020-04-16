@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="PWA project" content="PWA example">
+        <title>hw4 PWA</title>
+        <link rel="stylesheet" type="text/css" href="/styles.css">
+        <link rel="manifest" href="/manifest.json">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <meta name="apple-mobile-web-app-title" content="Weather PWA">
+        <link rel="apple-touch-icon" href="/images/icons/icon-152x152.png">
+        <meta name="description" content="A sample PWA">
+        <meta name="theme-color" content="#2F3BA2" />
+    </head>
+    <body>
+        <header class="header">
+            <h1>Progressive Web Apps</h1>
+        </header>
+        <div id="shelf">
+            <label>Backgrounds:
+                <select id="themes" onChange="changeTheme()">
+                    <option value="">Default</option>
+                    <option value="/images/lightblue.jpg">Light Blue</option>
+                    <option value="images/lightgold.jpg">Gold</option>
+                </select>
+            </label>
+            <button id="butInstall" label="Install">Install PWA</button>
+        <p>
+        You might be asking: what exactly is a Progressive Web App?
+        Well, let me explain. Often referred to as PWA's, Progressive Web
+        Apps are applications for your phone, tablet, laptop or home computer
+        that operate very similar to apps you download from an app store
+        (also known as native apps). The biggest difference between a PWA
+        and a native app resides in the development side of things. When
+        developing a native app, you will have different code written for
+        different devices (i.e. Android and Apple). This creates challenges
+        for the developers as well as the company producing the app. The
+        developer will essentually be writting two applications, which in
+        turn will drive up the cost of production. This is where PWA's can
+        save the day!
+        </p>
+        <br>
+        <p>
+        PWA's are written with just one set of code, regardless of the
+        type of device it will be operating on. PWA's are written in HTML
+        format, meaning that they opperate the same way a website does.
+        There are a few differences between a PWA and traditional website,
+        the biggest being that you can download a PWA directly to your device.
+        By doing this, the user will have a hard copy of the application's
+        content stored on their device the same way a native app is downloaded.
+        This allows the user to operate the app with or without an internet
+        connection, all while using less storage space on their device. All in
+        all, PWA's are a great choice whether you are the company producing
+        the app or the consumer putting it to use.
+        </p>
+    <footer>
+        <div class="footerText">Created by Tony Girard</div>
+    </footer>
+</div>
+    </body>
+    <script src="app.js"></script>
+</html>
