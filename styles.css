@@ -1,0 +1,59 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-size: 1.5em;
+}
+header {
+    background-image: url(/images/ocean-header.jpg);
+    background-repeat: no-repeat;
+    background-size: auto;
+    width: 100%;
+}
+h1 {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    text-align: center;
+    text-shadow: 2px 2px 7px white;
+    padding: 0.2em;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+#shelf {
+    margin: 0;
+    padding: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+label {
+    margin-left: 0.5em;
+    font-size: 0.8em;
+    font-weight: bold;
+}
+#butInstall{
+    background-color: lightblue;
+    float: right;
+    margin-right: 1em;
+    margin-top: 0.8em;
+    font-weight: bold;
+}
+p {
+    margin-left: 1em;
+    margin-right: 1em;
+    font-family: sans-serif;
+    text-indent: 1.5em;
+    word-spacing: 0.1em;
+    line-height: 1.5em;
+}
+footer {
+    background-color: lightgrey;
+    padding: 0.8em;
+}
+.footerText {
+    font-size: 0.5em;
+    font-family: fantasy;
+    text-align: right;
+    margin-right: 1em;
+}
+img {
+    border: 2px black;
+}
