@@ -1,6 +1,6 @@
 if (navigator.serviceWorker) {
     window.addEventListener('load', () => {
-	   navigator.serviceWorker.register('/sw.js')
+	   navigator.serviceWorker.register('/homework4/sw.js')
 	      .then(registration => console.log('SW registered'))
 		  .catch(err => console.log(`SW not registered - Error: ${err}`))
     })
