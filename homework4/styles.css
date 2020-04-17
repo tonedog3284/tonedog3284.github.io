@@ -5,7 +5,7 @@ body {
     font-size: 1.5em;
 }
 header {
-    background-image: url(/images/ocean-header.jpg);
+    background-image: url(/homework4/images/ocean-header.jpg);
     background-repeat: no-repeat;
     background-size: auto;
     width: 100%;
@@ -53,7 +53,4 @@ footer {
     font-family: fantasy;
     text-align: right;
     margin-right: 1em;
-}
-img {
-    border: 2px black;
 }
