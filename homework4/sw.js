@@ -1,9 +1,9 @@
-var CACHE_VERSION = 'PWA-v6';
+var CACHE_VERSION = 'PWA-v7';
 var FILES_TO_CACHE = [
-  '/',
-  '/index.html',
-  '/styles.css',
-  '/app.js',
+  '/homework4/',
+  '/homework4/index.html',
+  '/homework4/styles.css',
+  '/homework4/app.js',
 ];
 self.addEventListener('install', event => {
     console.log('SW installed');
