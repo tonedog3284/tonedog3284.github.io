@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <title>Anthony Girard</title>
+    <link rel="stylesheet" href="main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Anthony Girard CIS 114 Final Project">
+</head> 
+<header>
+    <h1>Baseball</h1>
+    <h4 id="headerText">"America's game"</h4>
+</header>
+<body>
+<main> 
+    <div id="slide_show">
+        <h2 id="caption">Ken Griffey Jr</h2>
+        <img id="slide" src="images/griffey.jpg" alt="">
+        <div id="slides">
+            <img src="images/griffey.jpg" alt="Ken Griffey Jr">
+            <img src="images/bonds.jpg" alt="Barry Bonds">
+            <img src="images/maddux.jpg" alt="Greg Maddux">
+            <img src="images/mays.jpg" alt="Willie Mays">
+            <img src="images/ripken_jr.jpg" alt="Cal Ripken Jr">
+            <img src="images/ruth.jpg" alt="Babe Ruth">
+            <img src="images/nolan.jpg" alt="Nolan Ryan">
+            <img src="images/gwynn.jpg" alt="Tony Gwynn">
+        </div>
+    </div>
+    <div id="description">
+        <p>Baseball is a wonderful game with over 150 years of 
+            history. Use this tool to search for past or current players background 
+            information. </p>
+    </div>
+    <div id="userInput">
+        <label for="player">Player Name:</label>
+        <input type="text"  name="player" id="player" value="">
+    </div>
+    <div id="status">
+        <label for="status">Player Status</label>
+        <input type="radio" name="status" id="active" value="Y" checked>Active
+        <input type="radio" name="status" id="inactive" value="N">Inactive
+    </div>
+    <div id="categories">
+        <label>Categories:</label>
+        <input type="checkbox" name="height" id="height" value="height">Height
+        <input type="checkbox" name="weight" id="weight" value="weight">Weight
+        <input type="checkbox" name="birth_date" id="birth_date" value="birth_date">Birthday
+        <input type="checkbox" name="birth_place" id="birth_place" value="birth_place">Birth Place
+        <input type="checkbox" name="high_school" id="high_school" value="high_school">High School
+        <input type="checkbox" name="college" id="college" value="college">College
+        <input type="checkbox" name="league" id="league" value="league">League
+        <input type="checkbox" name="team" id="team" value="team_full">Team
+        <input type="checkbox" name="position" id="position" value="position">Position
+        <input type="checkbox" name="bats" id="bats" value="bats">Bats
+        <input type="checkbox" name="throws" id="throws" value="throws">Throws
+    </div>
+    <div id="button">
+        <input type="button" id="view_button" value="Search">
+    </div>
+    <div id="display"></div>
+    <footer>
+        <p>Created By <B>Anthony Girard</B></p>
+    </footer>
+</main>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="final.js"></script>
+</body>   
+</html>
